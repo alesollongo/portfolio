@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Clase 2 - Ejemplos</title>
+	<meta charset="UTF-8">
+	<meta name="viewport">
+</head>
+
+<body>
+	<header>
+	  <nav>
+	    <ul>
+				<li><a href="http://www.alejandralongo.com/cv.html">Curriculum Vitae</a></li>
+				<li><a href="http://www.alejandralongo.com/index.html" title="Logo"><img src="">LOGO</img></a></li> <!-- el title agrega informacion adicional -->
+				<li><a href="#contacto">Contactame!</a></li> <!-- para ir mas abajo en la página, logica de parallax -->
+	    </ul>
+	  </nav>
+	</header>
+<hr>
+<h2>Listas</h2>
+	   <ul type="dashed">
+	     <li><a>Diseño Gráfico</a></li>
+	     <li><a>Diseño Web</a></li>
+	     <li><a>Redes Sociales</a></li>
+	     <li><a>Lettering</a></li>
+ 		</ul>
+		<ol>
+			<li><a>Diseño Gráfico</a></li>
+			<li><a>Diseño Web</a></li>
+			<li><a>Redes Sociales</a></li>
+			<li><a>Lettering</a></li>
+	 </ol>
+
+<hr>
+
+<h2>Tabulaciones de contenido</h2>
+	 <dl class=""> <!-- para hacer una descripcion de un termino y descripcion -->
+			 <dt>Firefox</dt>
+			 <dd>Un browser de mozzila</dd>
+			 <dt>Chrome</dt>
+			 <dd>Un browser de google</dd>
+			 <dt>Opera</dt>
+			 <dt>Explorer</dt>
+		</dl>
+
+
+	<hr>
+
+	<h2>Tablas</h2>
+<table border="1">
+	<thead> <!-- encabezado de tablas -->
+		<tr>
+			<th>Puntos</th>
+			<th>Equipos</th>
+			<th>Goles a Favor</th>
+			<th>Goles en contra</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>38</td>
+			<td>Boca</td>
+			<td>4</td>
+			<td>7</td>
+		</tr>
+	</tbody>
+	<tbody>
+		<tr>
+			<td>38</td>
+			<td>Boca</td>
+			<td>4</td>
+			<td>7</td>
+		</tr>
+	</tbody>
+	<tbody>
+		<tr>
+			<td>38</td>
+			<td>Boca</td>
+			<td>4</td>
+			<td>7</td>
+		</tr>
+	</tbody>
+	<tbody>
+		<tr>
+			<td>38</td>
+			<td>Boca</td>
+			<td>4</td>
+			<td>7</td>
+		</tr>
+	</tbody>
+	<tbody>
+		<tr>
+			<td>38</td>
+			<td>Boca</td>
+			<td>4</td>
+			<td>7</td>
+		</tr>
+	</tbody>
+</table>
+
+<hr>
+
+<h2>Fromularios</h2>
+<form class="" action="index.html" method="post">
+	<input type="text" name="" placeholder="Nombre">
+	<br><br>
+			<input type="password" name="" placeholder="Contraseña">
+	<br><br>
+			<input type="radio" name="Opcion" > opcion 1
+			<input type="radio" name="Opcion" >	opcion 2
+			<input type="radio" name="Opcion" >	opcion 3
+	<br><br>
+			<input type="checkbox" name="Opcion" checked > eleccion 1
+			<input type="checkbox" name="Opcion" >	eleccion 2
+			<input type="checkbox" name="Opcion" > eleccion 3
+	<br><br>
+			<input type="submit" name="" value="Enviar">
+			<input type="reset" name="" value="Borrar Todo">
+	<br><br>
+			<button type="submit" name="button">Boton Personalizado</button>
+	<br><br>
+			<input type="color" name="" value="">
+	<br><br>
+			<input type="range" name="" value="" max="10" min="0">
+	<br><br>
+			<input type="tel" name="" value="carga de numero telefonico">
+	<br><br>
+			<input type="search" name="" value="para busquedas">
+	<br><br>
+			<input type="date" name="" value="para busquedas">
+	<br><br>
+			<textarea name="name" maxlenghth="140" rows="8" cols="80" placeholder="Ingrese su texto"></textarea>
+	<br><br>
+			<select class="" name="">
+				<optgroup label="Frutas"> <!-- separacion informativa -->
+						<option value="1">peras</option> <!-- el value puede ser diferente para asociarse con otra informacion, por ejemplo el codigo de un determinado producto -->
+						<option value="2">manzanas</option>
+						<option value="3">bananas</option>
+				</optgroup>
+				<optgroup label="Verduras">
+						<option value="4">tomate</option>
+						<option value="5">lechuga</option>
+						<option value="6">zanahoria</option>
+				</optgroup>
+			</select>
+</form>
+
+<hr>
+<h2>Formularios: label 1</h2>
+<form class="" action="index.html" method="post">
+	<label for="socios"> <!-- asocia una informacion con otra -->
+		Nombre y Apellido
+		<input  type="text" name="" value="" id="socios">
+	</label>
+</form>
+
+<hr>
+<h2>Formularios: label con fieldset</h2>
+<form class="" action="index.html" method="post">
+	<fieldset>
+			<legend>TITULO DE ESTA SECCIÓN</legend>
+			<label for="socios">Nombre y Apellido</label>
+			<input  type="text" name="" value="" id="socios">
+	</fieldset>
+</form>
+
+<hr>
+
+<h2>Imagenes</h2>
+<img src="https://http2.mlstatic.com/reloj-retro-auto-flip-clock-diseno-pared-D_NQ_NP_232825-MLA25489028598_042017-F.webp" alt="texto alternativo" width="200"> <!-- es suficiente con definir el ancho O el alto, no hace falta los dos -->
+
+<hr>
+
+<h2>Audio y video</h2>
+<p>Etiquetas de html 5</p>
+<video controls loop autoplay> <!-- definir siempre los controles -->
+	<source src="mivideo.mp4" type="video/mp4" autoplay> <!-- va variando segun formato -->
+		Tu navegador no esta soportando este video
+</video>
+<audio src="miaudio.ogg" controls loop autoplay>
+	Tu navegador no soporta audios
+</audio>
+
+<hr>
+<h2>unidades de medida CSS</h2>
+<p>PX</p>
+<h3>EM</h3>
+<p>unidades relativas, es realtiva que depende del font-size que tenga ese mismo elemento o su elemento padre</p>
+<h3>REM</h3>
+<p>sont ambien unidades relativas, pero me conviene definir una medida en PX en el root HTML que me da la base controlada
+	 y luego voy dando jerarquia visual modificando los rems.</p>
+
+<h3>VW</h3>
+<p>ANCHO DEL VIWPORT - son tambien unidades relativas, 100VW</p>
+<h3>VH</h3>
+<p>ALTO DEL VIWPORT - son tambien unidades relativas, 100VH</p>
+<hr>
+<h2>can i use</h2>
+<p>buscar para ver que version de browser sirve</p>
+<hr>
+
+<h2>paginas utiles</h2>
+<a href="http://www.colors.commutercreative.com/grid/">http://www.colors.commutercreative.com/grid/</a>
+<hr>
+
+<h2>position</h2>
+<h3>relative</h3>
+<p>es relativa en funcion de si misma y se mueve segun donde fue creada</p>
+<h3>absolute</h3>
+<p>trabaja en funcion de su padre (que debe tener definida position relative)</p>
+<h3>fixed</h3>
+<p>funciona en relacion a la ventana</p>
+<h3></h3>
+
+<hr>
+<h2>floats</h2>
+<p>las cajas salen de su flujo natural</p>
+<p><b>IMPORTANTE: En el elemento que esta automaticamente despues tengo que poner clear:both que hace que todo regrese al flujo de trabajo</b></p>
+<p>Se puede crear un pseudo elemento con css</p>
+
+<hr>
+<h2>flexbox - <a href="https://codepen.io/enxaneta/full/adLPwv/">https://codepen.io/enxaneta/full/adLPwv/</a></h2>
+<h3></h3>
+<p>elemento padre: es flex container</p>
+<p>elementos icos: flex items</p>
+<p>cada caja padres e hijos tienen sis ejes verticales y horizontales</p>
+<ul>
+	<h4>Atributos para el contenedor PADRE</h4>
+	<li><b>display:flex</b> se coloca esta propiedad en el elemento padre y todas las propiedades a continuacion tambien</li>
+	<li><b>flex direction</b> flujo en el que sus items se van a distribuir, òdemos hacer que los items esten en filas o en columnas </li>
+			<ul>
+				<li>row: desde la izquierda y en orden</li>
+				<li>row-reverse: desde la derecha y en orden invertido</li>
+				<li>column:en formato de columna</li>
+				<li>column-reverse: columna pero al reves</li>
+			</ul>
+	<li><b>flex wrap</b> de que forma cae a segunda linea</li>
+		<ul>
+			<li>no wrap: lo achica hasta lo minimo pero nunca cae</li>
+			<li>wrap: cae a la segunda linea</li>
+		</ul>
+	<li><b>justify content</b> como se acomodan los items en el eje principal</li>
+			<ul>
+				<li>flex start: al principio</li>
+				<li>flex end: al final</li>
+				<li>hay mas....</li>
+			</ul>
+
+			<h4>Atributos para el contenedor HIJO </h4>
+
+</ul>
+
+<hr>
+<h2>pseudoclases</h2>
+<p>:hover</p>
+<p>:active</p>
+<p>:visited</p>
+<p>:link - el que aun no se visito</p>
+<p>:focus - significa que estas parado en este campo de texto</p>
+
+<hr>
+
+<h2>pseudoelementos</h2>
+<p>:after</p>
+<p>:before</p>
+<p>:first-letter -  edita la primer letra</p>
+<p>:last-child - edita el ultimo item</p>
+<p>:last-child - el ultimo hijo</p>
+<p>:nth-child(3) - le paso un parametro para que el tercero se comporte de determinada manera</p>
+<p>:nth-child(2n) - edita uno cada dos</p>
+
+
+</body>
+</html>
