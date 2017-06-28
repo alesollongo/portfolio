@@ -267,7 +267,7 @@ footer{
 
 @media (max-width: 760px) {
   main.container {
-    /* background-color: green; */
+    /* background-color: green; verde */
     padding: 1rem;
   }
 
@@ -365,7 +365,4 @@ footer{
    padding: 10px;
    text-align: center;
  }
-
-
-
 }
