@@ -1,0 +1,230 @@
+$tipoTitulos: 'Roboto', sans-serif;
+$colorPrimary: bisque;
+
+* {box-sizing: border-box; margin: 0; padding: 0;}
+html {font-size: 16px;}
+body {margin:0; font-family: 'Lato', sans-serif; color: #5e5e5e; box-sizing: border-box; background-color: #eeeeee;}
+h1, h2, h3, h4, h5, h6 {font-family: $tipoTitulos;}
+a {text-decoration: none;}
+.container {max-width: 960px; margin: 0 auto;}
+
+/*-----header-----*/
+header, footer {background-color:$colorPrimary; text-align: center; width: 100%;}
+header ul {
+  list-style-type:none;
+  margin:0;
+  padding:1.3rem 0rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+header li:not(.logo) a {
+  padding: 1.2rem 1.7rem;
+  font-size: 0.8rem;
+  color:white;
+  color: dimgray;
+  width: 100%;
+}
+
+
+header li:first-child a  {
+ border-right: 1px solid dimgray;
+ margin-right: 3rem;
+}
+
+header li:last-child a {
+ border-left: 1px solid dimgray;
+ margin-left: 3rem;
+}
+
+header li:first-child a, header li:last-child a  {
+ transition: background 2s ease, color 2s ease;
+}
+
+header li:first-child a:hover, header li:last-child a:hover  {
+  background-color: BurlyWood;
+}
+
+
+
+.logo img {
+  max-width: 150px;
+
+}
+
+
+
+/*
+header nav ul li a {
+  border-right: 1px solid dimgray;
+  transition: background 1s ease, color 1s ease;
+}
+
+
+header nav ul li a.izquierdo:hover, header nav ul li a.derecho:hover {
+  background-color: BurlyWood;
+  color: white;
+}
+
+*/
+
+/*-----menu principal-----*/
+nav.menuPrincipal{
+  background-color:dimgray;
+}
+
+nav.menuPrincipal ul {
+  list-style-type:none;
+  text-align: center;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+
+}
+
+/* nav.menuPrincipal ul li {
+  display: inline-block;
+} */
+
+nav.menuPrincipal ul li a {
+  letter-spacing: 3px;
+  padding: 1.5rem 2rem;
+  border-bottom: 3px solid bisque;
+  font-size: 0.8rem;
+  color:white;
+  display: block;
+  margin:0px 1rem;
+  color: #eeeeee;
+  background-color:dimgray;
+  font-weight: 300;
+  transition: background 1s ease, color 1s ease;
+}
+
+nav.menuPrincipal ul li a:hover {
+  background-color: #cccccc;
+}
+
+/*-----main (nav, proyectos, sobreMi)-----*/
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color:#eeeeee;
+  padding: 2rem 0rem;
+}
+
+main section.proyectos {
+  background-color:#eeeeee;
+  width: 75%;
+  padding-right: 1rem;
+
+  display: flex; /* le digo esta que a su vez sea clase padre */
+  flex-wrap: wrap;
+  justify-content:space-between;
+
+}
+
+
+aside.sobreMi {
+  padding: 1.7rem;
+  background-color: #cccccc;
+  width: 25%;
+}
+
+aside.sobreMi h3 {
+ font-weight: 300;
+ letter-spacing: 3px;
+ border-bottom: 1px solid darkgray;
+ padding-bottom: 0.5rem;
+}
+
+aside.sobreMi img {
+  width: 100%;
+  border-radius: 100px;
+  display: block;
+  margin:1em auto;
+  filter: unquote("grayscale(100%)");
+}
+
+aside.sobreMi p {
+  font-size: 0.9rem;
+  padding-bottom: 0.7rem;
+}
+
+aside.sobreMi a {
+  background-color: bisque;
+  border-radius: 10px;
+  color: dimgray;
+  display: block;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+}
+
+
+
+
+/*----- seccion proyectos -----*/
+
+
+div.trabajo {
+  background-color: lightgray;
+  max-width: 30%;
+  margin-right: 1em;
+  margin-bottom: 40px;
+}
+
+div.trabajo img {
+ width: 100%;
+}
+
+div.trabajo div.descripcion {
+ padding: 0.5rem 1rem;
+ position: relative;
+ background-color: white;
+}
+
+div.trabajo h2 {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 300;
+  border-bottom: 1px solid dimgray;
+}
+
+div.trabajo div.descripcion p {
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 1rem 0rem;
+}
+
+div.trabajo div.descripcion .btn {
+  background-color: NavajoWhite;
+  border-radius: 10px;
+  color: dimgray;
+  display: block;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  font-size: 0.7rem;
+  position: absolute;
+  bottom:-20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+
+
+/*----- foote -----*/
+footer{
+  padding: 2rem;
+}
