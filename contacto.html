@@ -1,37 +1,44 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<title>Portfolio - Contacto</title>
+	<title>Portfolio</title>
 	<meta charset="UTF-8">
 	<meta name="viewport">
-	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/normalize.css" type="text/css">
+	<link rel="stylesheet" href="css/styles.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
 </head>
 
 
+
 <body>
-<div class="container">
 	<header>
-		<nav class="menuSecundario">
-			<ul>
-				<li><a href="cv.html">Curriculum Vitae</a></li>
-				<li><a href="index.html"><img src="img/logo.png" width="150"></a></li>
-				<li><a href="contacto.html">Contactame!</a></li>
-			</ul>
-		</nav>
+		<div class="container">
+			<nav class="menuSecundario">
+	    <ul> <!-- ul>li*3 ATAJO COPADO! -->
+		      <li><a href="cv.html">Curriculum Vitae</a></li>
+		      <li class="logo" ><a href="index.html"><img src="img/logo.png"></a></li>
+		      <li><a href="contacto.html" >Contactame!</a></li>
+		    </ul>
+		  </nav>
+		</div>
 	</header>
 
 	<nav class="menuPrincipal">
-	   <ul>
-	     <li><a href="dg.html">Diseño Gráfico</a></li>
-	     <li><a href="dw.html">Diseño Web</a></li>
-	     <li><a href="rrss.html">Redes Sociales</a></li>
-	     <li><a href="l.html">Lettering</a></li>
-	   </ul>
+		<div class="container">
+			<ul>
+				<li><a href="dg.html">DISEÑO GRÁFICO</a></li>
+				<li><a href="dw.html">DISEÑO WEB</a></li>
+				<li><a href="rrss.html">REDES SOCIALES</a></li>
+				<li><a href="l.html">LETTERING</a></li>
+			</ul>
+		</div>
 	</nav>
 
-	<section class="container">
-	  <main>
-	    <section class="izquierda">
+
+	  <main class="container">
+	    <section class="proyectos">
           <form class="" action="index.html" method="post">
               <label>
                 <span>Nombre y Apellido</span><br>
@@ -67,18 +74,20 @@
               </label>
 
           </form>
+			</section>
 
-	    </section>
 			<aside class="sobreMi">
-	        <h3>Sobre Mi</h3>
-	        <img src="img/ale.jpg" width="100">
+	        <h3>SOBRE MI</h3>
+					<img src="img/ale.jpg">
 	        <p>Lorem ipsum dolo sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
 	        </p>
+					<a class="btn" href="cv.html">Descargar CV</a>
 	    </aside>
-	  </main>
-	</section>
+
+	</main>
 
 	<footer>
+		<div class="container">
 	    <section class="rrss">
 
 	    <section>
@@ -86,6 +95,7 @@
 	    <section class="copyright">
 	      <p>Todos los derechos reservados...</p>
 	    <section>
+		</div>
 	</footer>
 
 </div>
