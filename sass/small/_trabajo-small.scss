@@ -1,0 +1,21 @@
+div.trabajo {
+  max-width: 48%;
+  margin-right: 0;
+}
+
+div.trabajo h2 {
+ font-size: 1rem;
+ font-weight: 300;
+}
+
+div.trabajo div.descripcion p {
+   font-size: .9rem;
+   font-weight: 300;
+}
+
+div.trabajo div.descripcion .btn {
+   border-radius: 5px;
+   padding: .4rem;
+   font-size: 0.8rem;
+   bottom: -15px;
+}

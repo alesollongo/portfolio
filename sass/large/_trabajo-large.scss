@@ -1,0 +1,52 @@
+div.trabajo {
+  background-color: lightgray;
+  max-width: 30%;
+  margin-right: 1em;
+  margin-bottom: 40px;
+}
+
+div.trabajo img {
+ width: 100%;
+}
+
+div.trabajo div.descripcion {
+ padding: 0.5rem 1rem;
+ position: relative;
+ background-color: white;
+ margin: 0px;
+}
+
+div.trabajo h2 {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 300;
+  border-bottom: 1px solid $colorOscuro;
+  padding: 0.6rem;
+}
+
+div.trabajo div.descripcion p {
+  text-align: center;
+  font-size: 0.8rem;
+  padding: 1rem 0rem;
+}
+
+div.trabajo div.descripcion .btn {
+  background-color: NavajoWhite;
+  border-radius: 8px;
+  color: $colorOscuro;
+  display: block;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  font-size: 0.7rem;
+  position: absolute;
+  bottom:-20px;
+  width: 60%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: background 1.5s ease;
+}
+
+div.trabajo div.descripcion .btn:hover {
+  background-color: BurlyWood;
+}

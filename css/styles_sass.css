@@ -63,19 +63,6 @@ header li:first-child a:hover, header li:last-child a:hover {
 .logo img {
   max-width: 150px; }
 
-/*
-header nav ul li a {
-  border-right: 1px solid dimgray;
-  transition: background 1s ease, color 1s ease;
-}
-
-
-header nav ul li a.izquierdo:hover, header nav ul li a.derecho:hover {
-  background-color: BurlyWood;
-  color: white;
-}
-
-*/
 /*-----menu principal-----*/
 nav.menuPrincipal {
   background-color: dimgray; }
@@ -89,24 +76,22 @@ nav.menuPrincipal ul {
   align-items: center;
   justify-content: center; }
 
-/* nav.menuPrincipal ul li {
-  display: inline-block;
-} */
 nav.menuPrincipal ul li a {
   letter-spacing: 3px;
   padding: 1.5rem 2rem;
   border-bottom: 3px solid bisque;
   font-size: 0.8rem;
   color: white;
-  display: block;
   margin: 0px 1rem;
   color: #eeeeee;
   background-color: dimgray;
   font-weight: 300;
-  transition: background 1s ease, color 1s ease; }
+  transition: background 1s ease, color 1s ease;
+  display: block; }
 
 nav.menuPrincipal ul li a:hover {
-  background-color: #cccccc; }
+  background-color: #cccccc;
+  color: dimgray; }
 
 /*-----main (nav, proyectos, sobreMi)-----*/
 main {
@@ -154,7 +139,11 @@ aside.sobreMi a {
   display: block;
   margin: auto;
   padding: 10px;
-  text-align: center; }
+  text-align: center;
+  transition: background 1.5s ease; }
+
+aside.sobreMi a:hover {
+  background-color: BurlyWood; }
 
 /*----- seccion proyectos -----*/
 div.trabajo {
@@ -169,13 +158,15 @@ div.trabajo img {
 div.trabajo div.descripcion {
   padding: 0.5rem 1rem;
   position: relative;
-  background-color: white; }
+  background-color: white;
+  margin: 0px; }
 
 div.trabajo h2 {
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 300;
-  border-bottom: 1px solid dimgray; }
+  border-bottom: 1px solid dimgray;
+  padding: 0.6rem; }
 
 div.trabajo div.descripcion p {
   text-align: center;
@@ -184,7 +175,7 @@ div.trabajo div.descripcion p {
 
 div.trabajo div.descripcion .btn {
   background-color: NavajoWhite;
-  border-radius: 10px;
+  border-radius: 8px;
   color: dimgray;
   display: block;
   margin: auto;
@@ -193,11 +184,142 @@ div.trabajo div.descripcion .btn {
   font-size: 0.7rem;
   position: absolute;
   bottom: -20px;
+  width: 60%;
   left: 50%;
-  transform: translateX(-50%); }
+  transform: translateX(-50%);
+  transition: background 1.5s ease; }
 
-/*----- foote -----*/
+div.trabajo div.descripcion .btn:hover {
+  background-color: BurlyWood; }
+
+/*----- footer -----*/
 footer {
   padding: 2rem; }
+
+/*----- media queries -----*/
+@media (max-width: 960px) {
+  div.trabajo h2 {
+    font-size: .8rem; }
+
+  div.trabajo div.descripcion p {
+    font-size: 0.7rem;
+    padding: .8rem 0rem; }
+
+  div.trabajo div.descripcion .btn {
+    border-radius: 5px;
+    padding: .4rem;
+    font-size: 0.58rem;
+    bottom: -10px; }
+
+  header ul {
+    padding: 0.6rem 0rem; }
+
+  main.container {
+    background-color: red;
+    padding: 1rem; }
+
+  nav.menuPrincipal ul li a {
+    letter-spacing: 3px;
+    padding: 1.2rem 1.2rem;
+    border-bottom: 3px solid bisque;
+    font-size: .65rem;
+    margin: 0px 1rem; }
+
+  .logo img {
+    max-width: 130px; }
+
+  aside.sobreMi {
+    padding: 1.3rem; }
+
+  aside.sobreMi h3 {
+    font-size: 1rem; }
+
+  aside.sobreMi p {
+    font-size: .75rem;
+    line-height: 1rem;
+    padding-bottom: 0.7rem; }
+
+  aside.sobreMi a {
+    font-size: .8em; } }
+@media (max-width: 760px) {
+  main.container {
+    /* background-color: green; verde */
+    padding: 1rem; }
+
+  header ul {
+    padding: 0.5rem 0rem; }
+
+  header li:first-child a {
+    border-right: 1px solid dimgray;
+    margin-right: 2rem; }
+
+  header li:last-child a {
+    border-left: 1px solid dimgray;
+    margin-left: 2rem; }
+
+  header li:not(.logo) a {
+    padding: .7rem 0.9rem; }
+
+  nav.menuPrincipal ul li a {
+    letter-spacing: 2px;
+    padding: .9rem .7rem;
+    border-bottom: 2px solid bisque;
+    font-size: .58rem;
+    margin: 0px 1rem; }
+
+  .logo img {
+    max-width: 110px; }
+
+  main {
+    flex-direction: column; }
+
+  main section.proyectos {
+    width: 100%;
+    padding-right: 0; }
+
+  div.trabajo {
+    max-width: 48%;
+    margin-right: 0; }
+
+  div.trabajo h2 {
+    font-size: 1rem;
+    font-weight: 300; }
+
+  div.trabajo div.descripcion p {
+    font-size: .9rem;
+    font-weight: 300; }
+
+  div.trabajo div.descripcion .btn {
+    border-radius: 5px;
+    padding: .4rem;
+    font-size: 0.8rem;
+    bottom: -15px; }
+
+  main aside.sobreMi {
+    width: 100%;
+    margin-top: 1rem; }
+
+  aside.sobreMi h3 {
+    letter-spacing: 5px;
+    font-size: 1.3rem;
+    padding-bottom: 0.6rem;
+    text-align: center; }
+
+  aside.sobreMi img {
+    width: 30%;
+    border-radius: 100px;
+    margin-right: 1.5rem;
+    filter: grayscale(100%);
+    float: left; }
+
+  aside.sobreMi p {
+    font-size: 0.8rem;
+    padding: 1.5rem;
+    /* background-color: red; */ }
+
+  aside.sobreMi a {
+    width: 30%;
+    padding: 10px;
+    text-align: center; } }
 
 /*# sourceMappingURL=styles_sass.css.map */
